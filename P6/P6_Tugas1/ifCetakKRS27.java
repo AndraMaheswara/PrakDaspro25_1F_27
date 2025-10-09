@@ -8,16 +8,10 @@ public class ifCetakKRS27 {
         System.out.println("---Cetak KRS Siakad---");
         System.out.print("Apakah UKT sudah lunas? (true/false): ");
         boolean uktLunas27 = andra.nextBoolean();
+        String pesan;
 
-        if (uktLunas27) {
-                System.out.println("Pembayaran UKT erverifikasi");
-                System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");
-        }
-        else {
-                System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
-
-
-
+        pesan = (uktLunas27)? "Pembayaran UKT erverifikasi. Silahkan cetak KRS dan minta tanda tangan DPA" : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
+        System.out.println(pesan);
         }
 
         
@@ -33,7 +27,7 @@ public class ifCetakKRS27 {
 
 
 
-
+                
 
 
 
@@ -46,4 +40,4 @@ public class ifCetakKRS27 {
 
 
         
-}}
+}
