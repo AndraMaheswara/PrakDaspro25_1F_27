@@ -12,9 +12,15 @@ public class ifCetakKRS27 {
         if (uktLunas27) {
                 System.out.println("Pembayaran UKT erverifikasi");
                 System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");
+        }
+        else {
+                System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
+
 
 
         }
+
+        
         
 
 
