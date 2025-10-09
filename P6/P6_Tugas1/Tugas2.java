@@ -8,9 +8,9 @@ public class Tugas2 {
 
 
                 System.out.print("masukkan angka:");
-                int angka = andra.nextInt();
+                int angka27 = andra.nextInt();
 
-                if (angka % 2 == 0){
+                if (angka27 % 2 == 0){
                 System.out.println("angka genap");}
 
                 else {
