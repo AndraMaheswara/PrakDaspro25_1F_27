@@ -109,7 +109,7 @@ public class CM_Siakad_27{
 
             if ((nsPanca27*2+nsDaspro27*3+nsBing27*2)/sksTotal27<=2) {
                 System.out.println("TIDAK LULUS (IP KURANG DARI 2)");}
-            else if (nilaiPanca27<50) {
+            else if (nilaiPanca27<=50) {
                 System.out.println("TIDAK LULUS (NILAI PANCASILA D/E)");}
             else if (nilaiBing27<=39) { 
                 System.out.println("TIDAK LULUS (TERDAPAT NILAI E)");}
