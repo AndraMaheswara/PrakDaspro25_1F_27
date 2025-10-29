@@ -10,7 +10,7 @@ public class Parkir27 {
         double durasi27, biayaParkir27, totalPendapatan27 = 0;
 
         do {
-            System.out.print("\nMasukkan jenis kendaraan (1 = Mobil, 2 = Motor, 0 = Selesai): ");
+            System.out.println("Masukkan jenis kendaraan (1 = Mobil, 2 = Motor, 0 = Selesai): ");
             jenisKendaraan27 = andra.nextInt();
 
             if (jenisKendaraan27 == 0) {
@@ -39,7 +39,7 @@ public class Parkir27 {
 
         } while (jenisKendaraan27 != 0);
 
-        System.out.println("\nTotal pendapatan parkir hari ini: Rp " + totalPendapatan27);
+        System.out.println("Total pendapatan parkir hari ini: Rp " + totalPendapatan27);
 
     }
 }
