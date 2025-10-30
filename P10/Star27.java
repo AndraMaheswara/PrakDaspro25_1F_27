@@ -9,7 +9,7 @@ public class Star27 {
         System.out.print("Masukkan nilai n = ");
         int n27 = andra.nextInt();
 
-        for (int i27 = 1; i27 < n27; i27++) {
+        for (int i27 = 1; i27 > n27; i27++) {
             System.out.print("*");
         }
     }
