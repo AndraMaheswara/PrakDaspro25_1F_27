@@ -20,3 +20,5 @@ public class Tugas1_27 {
         System.out.println("Jumlah kuadrat dari 1 sampai " + n27 + " adalah " + total27);
     }
 }
+
+//a
