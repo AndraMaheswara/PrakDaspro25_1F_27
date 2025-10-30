@@ -34,3 +34,5 @@ public class Tugas3_27 {
         System.out.println("Total seluruh item terjual: " + totalItemKeseluruhan27);
     }
 }
+
+//a
