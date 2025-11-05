@@ -22,7 +22,5 @@ public class Tugas1 {
 
             System.out.println(" = " + jumlahKuadrat27);
         }
-
-       
     }
 }
