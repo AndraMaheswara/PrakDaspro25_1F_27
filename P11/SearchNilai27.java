@@ -28,7 +28,9 @@ public class SearchNilai27 {
         System.out.println();
         if (hasil27 != -1) {
             System.out.println("Nilai " + key27 + " ketemu di indeks ke-" + hasil27);}
-        
+            else {
+            System.out.println("Nilai yang dicar itidak ditemukan.");
+        }
          
     }
 }
