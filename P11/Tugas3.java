@@ -25,7 +25,7 @@ public class Tugas3 {
         }
 
     
-        System.out.print("\nMasukkan nama makanan/minuman yang ingin dicari: ");
+        System.out.print("Masukkan nama makanan/minuman yang ingin dicari: ");
         String cari27 = andra27.nextLine();
 
 
@@ -43,9 +43,9 @@ public class Tugas3 {
 
         System.out.println();
         if (ditemukan27) {
-            System.out.println("✅ " + cari27 + " tersedia di menu (indeks ke-" + indeks27 + ").");
+            System.out.println(cari27 + " tersedia di menu .");
         } else {
-            System.out.println("❌ Maaf, " + cari27 + " tidak tersedia di menu.");
+            System.out.println("Maaf, " + cari27 + " tidak tersedia di menu.");
         }
 
 
