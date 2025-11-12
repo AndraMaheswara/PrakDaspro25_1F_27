@@ -17,7 +17,7 @@ public class ArrayNilai27 {
         for (int i = 0; i < nilaiAkhir27.length; i++) {
             if (nilaiAkhir27[i] > 70) {
                     System.out.println ("Mahasiswa ke-"+i+" lulus!") ;}
-         
+            else    System.out.println ("Mahasiswa ke-"+i+" tidak lulus!") ;
 
 
         }
