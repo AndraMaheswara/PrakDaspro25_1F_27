@@ -21,8 +21,13 @@ public class Bioskop27 {
             System.out.println("Panjang baris: " + barisPenonton27.length);
         }
         
-       
-    
+        System.out.println();//biar enak diliat
+
+       System.out.println("Penonton pada baris ke-3 ");
+       for (int i = 0; i < penonton27[2].length; i++) {
+            System.out.println(penonton27[2][i]);
+       }
+        System.out.println(); //biar enak diliat
         System.out.printf("%s\t%s\n", penonton27[0][0], penonton27[0][1]);
         System.out.printf("%s\t%s\n", penonton27[1][0], penonton27[1][1]);
         System.out.printf("%s\t%s\n", penonton27[2][0], penonton27[2][1]);
