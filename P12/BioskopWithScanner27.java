@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class BioskopWithScanner27 {
     public static void main(String[] args) {
         Scanner andra = new Scanner(System.in);
-        int pilihan;
+        int pilihan27;
         
-        String[][] penonton = new String[4][2];
+        String[][] penonton27 = new String[4][2];
 
 
 
@@ -17,28 +17,28 @@ public class BioskopWithScanner27 {
             System.out.println("2. Tampilkan daftar penonton");
             System.out.println("3. Exit");
             System.out.print("Pilih menu: ");
-            pilihan = andra.nextInt();
+            pilihan27 = andra.nextInt();
             andra.nextLine();
 
-            switch (pilihan){
+            switch (pilihan27){
                 case 1:
                     System.out.print("Masukkan nama: ");
-                    String nama = andra.nextLine(); 
+                    String nama27 = andra.nextLine(); 
 
                     System.out.print("Masukkan baris (1-4): ");
-                    int baris = andra.nextInt();
+                    int baris27 = andra.nextInt();
 
                     System.out.print("Masukkan kolom (1-2): ");
-                    int kolom = andra.nextInt();
+                    int kolom27 = andra.nextInt();
                     andra.nextLine();
                     
 
-                    if (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
+                    if (baris27 < 1 || baris27 > 4 || kolom27 < 1 || kolom27 > 2) {
                         System.out.println("Posisi kursi tidak valid!");
-                    } else if (penonton[baris - 1][kolom - 1] != null) {
+                    } else if (penonton27[baris27 - 1][kolom27 - 1] != null) {
                         System.out.println("Kursi sudah terisi!");
                     } else {
-                        penonton[baris - 1][kolom - 1] = nama;
+                        penonton27[baris27 - 1][kolom27 - 1] = nama27;
                         System.out.println("Data penonton berhasil disimpan.");
                         System.out.println();
                     }
@@ -46,12 +46,12 @@ public class BioskopWithScanner27 {
                     
                 case 2:
                 System.out.println("Daftar Penonton: ");
-                    for (int i = 0; i < penonton.length; i++) {
-                        for (int j = 0; j < penonton[i].length; j++) {
-                            if (penonton[i][j] == null) {
+                    for (int i = 0; i < penonton27.length; i++) {
+                        for (int j = 0; j < penonton27[i].length; j++) {
+                            if (penonton27[i][j] == null) {
                                 System.out.print("[ - ] ");
                             } else {
-                                System.out.print("[" + penonton[i][j] + "] ");
+                                System.out.print("[" + penonton27[i][j] + "] ");
                             }
                         }
                         System.out.println();
@@ -68,7 +68,7 @@ public class BioskopWithScanner27 {
                     System.out.println();
             }
 
-        } while (pilihan != 3);
+        } while (pilihan27 != 3);
             }
 }
 
