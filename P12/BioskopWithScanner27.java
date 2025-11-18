@@ -45,7 +45,7 @@ public class BioskopWithScanner27 {
                     for (int i = 0; i < penonton27.length; i++) {
                         for (int j = 0; j < penonton27[i].length; j++) {
                             if (penonton27[i][j] == null) {
-                                System.out.print("[ - ] ");
+                                System.out.print("[ *** ] ");
                             } else {
                                 System.out.print("[" + penonton27[i][j] + "] ");
                             }
