@@ -25,11 +25,19 @@ public class BioskopWithScanner27 {
 
                     System.out.print("Masukkan baris (1-4): ");
                     int baris27 = andra.nextInt();
-                    
+
                     System.out.print("Masukkan kolom (1-2): ");
                     int kolom27 = andra.nextInt();
                     andra.nextLine();
                     
+                   if (baris27 < 1 || baris27 > 4 || kolom27 < 1 || kolom27 > 2) {
+                        System.out.println("Posisi kursi tidak valid! Ulangi Input");
+                        continue;
+                    } else if (penonton27[baris27 - 1][kolom27 - 1] != null) {
+                        System.out.println("Kursi sudah terisi! Ulangi Input");
+                        continue;
+                    
+                    }
                     break;
                     
                 case 2:
