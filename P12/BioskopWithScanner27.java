@@ -5,31 +5,60 @@ import java.util.Scanner;
 public class BioskopWithScanner27 {
     public static void main(String[] args) {
         Scanner andra = new Scanner(System.in);
-        int baris, kolom;
-        String nama, next;
-        String[][] penonton = new String[4][2];
+        int pilihan27;
+        
+        String[][] penonton27 = new String[4][2];
 
-        while (true) {
-            System.out.print("Masukkan nama: ");
-            nama = andra.nextLine();
-
-            System.out.print("Masukkan baris: ");
-            baris = andra.nextInt();
-
-            System.out.print("Masukkan kolom: ");
-            kolom = andra.nextInt();
+        do {    
+            System.out.println("Menu: ");
+            System.out.println("1. Input data penonton");
+            System.out.println("2. Tampilkan daftar penonton");
+            System.out.println("3. Exit");
+            System.out.print("Pilih menu: ");
+            pilihan27 = andra.nextInt();
             andra.nextLine();
 
-            penonton[baris - 1][kolom - 1] = nama;
+            switch (pilihan27){
+                case 1:
+                    System.out.print("Masukkan nama: ");
+                    String nama27 = andra.nextLine(); 
 
-            System.out.print("Input penonton lainnya? (y/n): ");
-            next = andra.nextLine();
+                    System.out.print("Masukkan baris (1-4): ");
+                    int baris27 = andra.nextInt();
+                    
+                    System.out.print("Masukkan kolom (1-2): ");
+                    int kolom27 = andra.nextInt();
+                    andra.nextLine();
+                    
+                    break;
+                    
+                case 2:
+                System.out.println("Daftar Penonton: ");
+                    for (int i = 0; i < penonton27.length; i++) {
+                        for (int j = 0; j < penonton27[i].length; j++) {
+                            if (penonton27[i][j] == null) {
+                                System.out.print("[ - ] ");
+                            } else {
+                                System.out.print("[" + penonton27[i][j] + "] ");
+                            }
+                        }
+                        System.out.println();
+                    }
+                    break;
 
-            if (next.equalsIgnoreCase("n")) {
-                break;
+                    case 3:
+                    System.out.println("Dadah...");
+                    System.out.println();
+                    break;
+
+                default:
+                    System.out.println("Menu tidak valid!");
+                    System.out.println();
             }
-        }
-    }}
+
+        } while (pilihan27 != 3);
+            }
+}
 
      
     
