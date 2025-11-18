@@ -21,6 +21,7 @@ public class BioskopWithScanner27 {
             pilihan27 = andra.nextInt();
             andra.nextLine();
 
+
             switch (pilihan27){
                 case 1:
                     System.out.print("Masukkan nama: ");
@@ -34,8 +35,18 @@ public class BioskopWithScanner27 {
                     andra.nextLine();
                     
 
+                    if (baris27 < 1 || baris27 > 4 || kolom27 < 1 || kolom27 > 2) {
+                        System.out.println("Posisi kursi tidak valid!");
+                    } else if (penonton27[baris27 - 1][kolom27 - 1] != null) {
+                        System.out.println("Kursi sudah terisi!");
+                    } else {
+                        penonton27[baris27 - 1][kolom27 - 1] = nama27;
+                        System.out.println("Data penonton berhasil disimpan.");
+                        System.out.println();
+                    }
+                    break;
                     
-                    
+
                 case 2:
                 System.out.println("Daftar Penonton: ");
                     for (int i = 0; i < penonton27.length; i++) {
@@ -50,15 +61,18 @@ public class BioskopWithScanner27 {
                     }
                     break;
 
+
                     case 3:
                     System.out.println("Dadah...");
                     System.out.println();
                     break;
 
+                    
                 default:
                     System.out.println("Menu tidak valid!");
                     System.out.println();
             }
+
 
         } while (pilihan27 != 3);
             }
