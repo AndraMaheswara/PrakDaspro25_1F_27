@@ -15,7 +15,12 @@ public class Bioskop27 {
         penonton27[3][0] = "Gisel";
         penonton27[3][0] = "Hana";
          
-        
+
+        System.out.println(penonton27.length);
+        System.out.println(penonton27[0].length);
+        System.out.println(penonton27[1].length);
+        System.out.println(penonton27[2].length);
+        System.out.println(penonton27[3].length);
        
         System.out.printf("%s\t%s\n", penonton27[0][0], penonton27[0][1]);
         System.out.printf("%s\t%s\n", penonton27[1][0], penonton27[1][1]);
