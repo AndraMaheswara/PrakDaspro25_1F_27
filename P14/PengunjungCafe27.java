@@ -4,8 +4,8 @@ public class PengunjungCafe27 {
 
     public static void daftarPengunjung27(String... namaPengunjung27) {
         System.out.println("Daftar Nama Pengunjung:");
-        for (int i27 = 0; i27 < namaPengunjung27.length; i27++) {
-            System.out.println("- " + namaPengunjung27[i27]);
+        for (String nama27 : namaPengunjung27) {
+        System.out.println("- " + nama27);
         }
     }
 
