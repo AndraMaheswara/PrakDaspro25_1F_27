@@ -12,7 +12,7 @@ public class Kafe27 {
         System.out.print("Masukkan jumlah item yang ingin dipesan: ");
         int banyakItem27 = andra.nextInt();
         
-        int totalHarga27 = hitungTotalHarga27(pilihanMenu27, banyakItem27);
+        int totalHarga27 = hitungTotalHarga27(pilihanMenu27,banyakItem27, " ");
         
         System.out.println("Total harga untuk pesanan Anda: Rp.1 " + totalHarga27);
     }
@@ -51,11 +51,23 @@ public class Kafe27 {
 
 
 
-    public static int hitungTotalHarga27 (int pilihanMenu27, int banyakItem27) {
+    public static int hitungTotalHarga27 (int pilihanMenu27, int banyakItem27, String kodePromo27) {
         int[] hargaItem27 = {15000,20000,22000,12000,10000,18000};
 
         int hargaTotal27= hargaItem27[pilihanMenu27-1]*banyakItem27;
+        
+
+        if (kodePromo27.equals("DISKON50")) {
+        ;
+        hargaTotal27 = (int)(hargaTotal27 * 0.5);
+        } else if (kodePromo27.equals("DISKON30")) {
+        ;
+        hargaTotal27 = (int)(hargaTotal27 * 0.7);
+        } else {
+        System.out.println("Kode invalid.");
+        
+        
+        }
         return hargaTotal27;
     }
-    
 }
