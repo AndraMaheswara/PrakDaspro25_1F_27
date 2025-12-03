@@ -4,18 +4,39 @@ public class Kafe27 {
     
     public static void main(String[] args) {
         Scanner andra = new Scanner(System.in);
-        Menu27("Budi",true," ");
+        int totalKeseluruhan27 = 0;
+        String lanjut27;
 
+        System.out.print("Masukkan nama: ");
+        String namaPelanggan27 = andra.nextLine();
+        System.out.print("Apakah anda termasuk member?(true/false): ");
+        boolean isMember27 = andra.nextBoolean();
+        andra.nextLine();
+        System.out.print("masukkan kode promo (jika ada): ");
+        String kodePromo27 = andra.nextLine();
+
+        Menu27(namaPelanggan27, isMember27, kodePromo27);
+
+    do {
         System.out.print("\nMasukkan nomor menu yang ingin Anda pesan: ");
         int pilihanMenu27 = andra.nextInt();
-        
         System.out.print("Masukkan jumlah item yang ingin dipesan: ");
         int banyakItem27 = andra.nextInt();
         
-        int totalHarga27 = hitungTotalHarga27(pilihanMenu27,banyakItem27, " ");
         
-        System.out.println("Total harga untuk pesanan Anda: Rp.1 " + totalHarga27);
+        int harga27 = hitungTotalHarga27(pilihanMenu27, banyakItem27,kodePromo27);
+        totalKeseluruhan27 += harga27;
+
+        System.out.print("Apakah ingin memesan menu lain? (y/n): ");
+        lanjut27 = andra.next();
+    } while (lanjut27.equalsIgnoreCase("y"));
+
+    if (isMember27=false){ 
+    System.out.println("Total keseluruhan pesanan Anda: Rp" + totalKeseluruhan27);
+    } else {
+        System.out.println("Total keseluruhan pesanan Anda: Rp" + totalKeseluruhan27*0.9);
     }
+}
 
     public static void Menu27(String namaPelanggan27, boolean isMember27, String kodePromo27){
         System.out.println("Selamat datang " +namaPelanggan27+ "!");
